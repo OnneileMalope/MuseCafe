@@ -1,4 +1,4 @@
-/* ===== Global Styles ===== */
+
 body {
   background: radial-gradient(circle, #fcefcb, #8b5e3c);
   font-family: "Arial", sans-serif;
@@ -10,7 +10,7 @@ body {
   flex-direction: column;
 }
 
-/* ===== Header & Navigation ===== */
+
 .navbar {
   background: radial-gradient(circle, #fcefcb, #a67850);
   border-bottom: 2px solid #8b5e3c;
@@ -52,7 +52,7 @@ body {
   color: #fcefcb;
 }
 
-/* ===== Hero Section ===== */
+
 .background-image {
   background-image: url("Images/CafeBackground.jpg");
   background-size: cover;
