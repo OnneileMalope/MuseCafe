@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muse Cafe</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="Images/Logo.jpg" />
+    <!-- Optional: Add Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- ===== Navbar Section ===== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                Muse<span>Cafe</span>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="Menu.html">Menu</a>
+                <a href="Locations.html">Location</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== Hero Background ===== -->
+    <div class="background-image">
+        <!-- Consider adding content like a headline over the hero image -->
+        <div class="hero-content">
+            <h1>Welcome to Muse Cafe</h1>
+            <p>Where creativity meets flavor</p>
+        </div>
+    </div>
+
+    <!-- ===== Main Content ===== -->
+    <main>
+        <section class="body-content">
+            <p>
+                At Muse Cafe, we blend creativity with comfort. Whether you're here to sip on our
+                signature lattes or indulge in our freshly baked pastries,
+                <br />
+                we aim to inspire your senses. Join us for art events, live music, and a community
+                that celebrates creativity.
+            </p>
+        </section>
+
+        <section class="offers">
+            <h2>What We Offer</h2>
+
+            <div class="offer-container">
+                <div class="offer-box">
+                    <img src="Images/DailySpecials.jpg" alt="Daily Specials" />
+                    <h3>Daily Specials</h3>
+                    <p>View our daily specials</p>
+                    <button onclick="enlargeImage('Images/DailySpecials.jpg')">View</button>
+                </div>
+                <div class="offer-box">
+                    <img src="Images/LoyaltyProgram.jpg" alt="Loyalty Program" />
+                    <h3>Loyalty Program</h3>
+                    <p>
+                        Join our loyalty program and earn rewards and exclusive discounts with every
+                        purchase.
+                    </p>
+                    <button onclick="location.href='Loyalty.html'">Join Now</button>
+                </div>
+                <div class="offer-box">
+                    <img src="Images/Gallery1.jpg" alt="Gallery Image 1" />
+                    <h3>Gallery</h3>
+                    <p>Explore our cafe through photos</p>
+                    <button onclick="location.href='ImageGallery.html'">View Gallery</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <p>&copy; 2024 Muse Cafe. All rights reserved.</p>
+        <p class="social-links">
+            Follow us on
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>,
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>,
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        </p>
+    </footer>
+
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

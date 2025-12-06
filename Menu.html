@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Muse Cafe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- ===== Header ===== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                Muse<span>Cafe</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="Menu.html">Menu</a>
+                <a href="Locations.html">Location</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== Main Content ===== -->
+    <main class="menu-page">
+        <!-- Menu Hero Section -->
+        <section class="menu-hero">
+            <div class="hero-content">
+                <h1>Our Menu</h1>
+                <p>Handcrafted with love, served with passion. Discover our seasonal creations.</p>
+                <div class="download-section">
+                    <a href="MuseCafe_Menu.pdf" class="download-btn" download>
+                        <i class="fas fa-download"></i> Download Full Menu (PDF)
+                    </a>
+                    <p class="download-note">Printable version available</p>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=1200&auto=format&fit=crop"
+                    alt="Coffee and pastries arrangement" loading="lazy">
+            </div>
+        </section>
+
+        <!-- Menu Navigation -->
+        <nav class="menu-categories">
+            <a href="#coffee" class="category-btn active">
+                <i class="fas fa-coffee"></i>
+                <span>Coffee</span>
+            </a>
+            <a href="#tea" class="category-btn">
+                <i class="fas fa-mug-hot"></i>
+                <span>Tea</span>
+            </a>
+            <a href="#breakfast" class="category-btn">
+                <i class="fas fa-bacon"></i>
+                <span>Breakfast</span>
+            </a>
+
+        </nav>
+
+        <!-- Coffee Section -->
+        <section id="coffee" class="menu-section active">
+            <h2><i class="fas fa-coffee"></i> Coffee & Espresso</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&auto=format&fit=crop"
+                            alt="Latte art" loading="lazy">
+                    </div>
+                    <div class="item-details">
+                        <h3>Muse Signature Latte <span class="price">R49.99</span></h3>
+                        <p class="description">Our house blend with vanilla and caramel notes</p>
+                        <div class="item-tags">
+                            <span class="tag">Bestseller</span>
+                            <span class="tag">Hot/Iced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=400&auto=format&fit=crop"
+                            alt="Cappuccino" loading="lazy">
+                    </div>
+                    <div class="item-details">
+                        <h3>Classic Cappuccino <span class="price">R49.99</span></h3>
+                        <p class="description">Perfect balance of espresso, steamed milk, and foam</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-details">
+                        <h3>Americano <span class="price">R64.99</span></h3>
+                        <p class="description">Rich espresso shots with hot water</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-details">
+                        <h3>Mocha <span class="price">R124.99</span></h3>
+                        <p class="description">Espresso with chocolate and steamed milk</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1561047029-3000c68339ca?w=400&auto=format&fit=crop"
+                            alt="Cold brew coffee" loading="lazy">
+                    </div>
+                    <div class="item-details">
+                        <h3>Cold Brew <span class="price">R75.90</span></h3>
+                        <p class="description">Slow-steeped for 16 hours, smooth and refreshing</p>
+                        <div class="item-tags">
+                            <span class="tag">Seasonal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tea Section -->
+        <section id="tea" class="menu-section">
+            <h2><i class="fas fa-mug-hot"></i> Tea Selection</h2>
+            <div class="menu-items">
+
+                <div class="menu-item">
+                    <div class="item-details">
+                        <h3>Earl Grey <span class="price">R29.99</span></h3>
+                        <p class="description">Classic black tea with bergamot</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-details">
+                        <h3>Chamomile <span class="price">R24.99</span></h3>
+                        <p class="description">Soothing herbal blend</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Breakfast Section -->
+        <section id="breakfast" class="menu-section">
+            <h2><i class="fas fa-bacon"></i> Breakfast</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&auto=format&fit=crop"
+                            alt="Avocado toast" loading="lazy">
+                    </div>
+                    <div class="item-details">
+                        <h3>Avocado Toast <span class="price">R85.99</span></h3>
+                        <p class="description">Sourdough with smashed avocado, cherry tomatoes, microgreens</p>
+                        <div class="item-tags">
+                            <span class="tag">Vegetarian</span>
+                            <span class="tag">Gluten-free option</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&auto=format&fit=crop"
+                            alt="Breakfast bowl" loading="lazy">
+                    </div>
+                    <div class="item-details">
+                        <h3>Acai Bowl <span class="price">R149.99</span></h3>
+                        <p class="description">Acai blend topped with granola, banana, and honey</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Download Section -->
+        <section class="full-menu-download">
+            <div class="download-card">
+                <i class="fas fa-file-pdf"></i>
+                <h3>Want the Complete Menu?</h3>
+                <p>Download our full menu with seasonal specials and nutritional information.</p>
+                <a href="MuseCafe_Menu.pdf" class="download-btn-large" download>
+                    <i class="fas fa-download"></i> Download PDF Menu
+                </a>
+                <p class="file-info">PDF • 2.4 MB • Updated monthly</p>
+            </div>
+        </section>
+
+        <!-- Allergen Information -->
+        <section class="allergen-info">
+            <h3><i class="fas fa-allergies"></i> Dietary Information</h3>
+            <div class="allergen-icons">
+                <div class="allergen-item">
+                    <i class="fas fa-seedling"></i>
+                    <span>Vegetarian</span>
+                </div>
+                <div class="allergen-item">
+                    <i class="fas fa-leaf"></i>
+                    <span>Vegan Option</span>
+                </div>
+                <div class="allergen-item">
+                    <i class="fas fa-bread-slice"></i>
+                    <span>Gluten-free</span>
+                </div>
+                <div class="allergen-item">
+                    <i class="fas fa-cow"></i>
+                    <span>Dairy-free</span>
+                </div>
+            </div>
+            <p class="note">Please inform your server of any allergies. Menu items may contain traces of allergens.</p>
+        </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <p>&copy; 2024 Muse Cafe. All rights reserved.</p>
+        <p class="social-links">
+            Follow us on
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>,
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>,
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        </p>
+    </footer>
+
+    <script src="js/menu.js"></script>
+</body>
+
+</html>
