@@ -80,7 +80,7 @@
   margin: 20px 40px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  position: sticky;
+  position: flex;
   top: 80px;
   z-index: 100;
 }
@@ -235,7 +235,6 @@
   font-weight: 600;
 }
 
-/* Full Menu Download */
 .full-menu-download {
   max-width: 1200px;
   margin: 60px auto;
@@ -292,7 +291,6 @@
   opacity: 0.8;
 }
 
-/* Allergen Information */
 .allergen-info {
   max-width: 1200px;
   margin: 60px auto;
@@ -347,7 +345,6 @@
   margin: 0 auto;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
   .menu-hero {
     grid-template-columns: 1fr;
