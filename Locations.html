@@ -4,15 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Location</title>
+    <title>Our Locations - Muse Cafe</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/locations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-  <header>
+
+<body>
+   
+    <header>
         <nav class="navbar">
             <div class="logo">
-                Muse<span>Cafe</span>
+                <a href="index.html">
+                    <img src="Images/Logo.jpg" alt="Muse Cafe Logo" />
+                </a>
             </div>
-
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="Menu.html">Menu</a>
@@ -22,29 +28,311 @@
         </nav>
     </header>
 
-
-<body>
     
-    <section class="location-info">
-        <h1>Find Us</h1>
-        <p>123 Coffee Lane, Caffeine City, CA 90210</p>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.787572902512!2d28.194258799999997!3d-25.744537599999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95621aafea98e7%3A0x764e28054a96fcde!2sMadiba%20St%2C%20Pretoria!5e0!3m2!1sen!2sza!4v1760972015806!5m2!1sen!2sza"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <h2>Opening Hours</h2>
-        <ul>
-            <p>Monday - Friday: 7am - 9pm</p>
-            <p>Saturday - Sunday: 8am - 10pm</p>
-        </ul>
-        <h2>Contact</h2>
-        <p>Phone: (123) 456-7890</p>
-        <p>Email: musecafe@example.com</p>
+    <main class="locations-page">
+        
+        <section class="locations-hero">
+            <div class="hero-content">
+                <h1>Our Locations</h1>
+                <p>Find your nearest Muse Cafe and experience the perfect blend of coffee and creativity.</p>
+            </div>
+        </section>
 
+        
+        <div class="location-selector">
+            <h2><i class="fas fa-map-marker-alt"></i> Select a Location</h2>
+            <div class="city-tabs">
+                <button class="city-tab active" data-city="downtown">
+                    <i class="fas fa-city"></i> Downtown
+                </button>
+                <button class="city-tab" data-city="uptown">
+                    <i class="fas fa-tree"></i> Uptown
+                </button>
+                <button class="city-tab" data-city="waterfront">
+                    <i class="fas fa-water"></i> Waterfront
+                </button>
+                <button class="city-tab" data-city="university">
+                    <i class="fas fa-university"></i> University
+                </button>
+            </div>
+        </div>
 
+       
+        <div class="locations-container">
+           
+            <section class="location-details active" id="downtown">
+                <div class="location-content">
+                    <div class="location-info">
+                        <div class="location-header">
+                            <h2><i class="fas fa-building"></i> Downtown Muse Cafe</h2>
+                            <span class="featured-badge">Flagship Store</span>
+                        </div>
+                        
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <i class="fas fa-map-pin"></i>
+                                <div>
+                                    <h4>Address</h4>
+                                    <p>123 Coffee Street, Creative District<br>San Francisco, CA 94110</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h4>Opening Hours</h4>
+                                    <p><strong>Monday - Friday:</strong> 7:00 AM - 10:00 PM</p>
+                                    <p><strong>Saturday - Sunday:</strong> 8:00 AM - 11:00 PM</p>
+                                    <p class="holiday">*Open all holidays except Christmas Day</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Contact</h4>
+                                    <p><strong>Phone:</strong> +1 (415) 555-1234</p>
+                                    <p><strong>Email:</strong> downtown@musecafe.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-star"></i>
+                                <div>
+                                    <h4>Special Features</h4>
+                                    <ul class="features-list">
+                                        <li>Live music every Friday & Saturday</li>
+                                        <li>Art gallery with local artists</li>
+                                        <li>Private event space available</li>
+                                        <li>Outdoor patio seating</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="action-buttons">
+                            <a href="https://goo.gl/maps/example" target="_blank" class="action-btn">
+                                <i class="fas fa-directions"></i> Get Directions
+                            </a>
+                            <a href="tel:+14155551234" class="action-btn call">
+                                <i class="fas fa-phone"></i> Call Now
+                            </a>
+                            <button class="action-btn save" onclick="saveLocation('downtown')">
+                                <i class="far fa-bookmark"></i> Save Location
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="location-map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.682434336373!2d-122.41941508468216!3d37.77492977975938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c8b1e6c7f%3A0x4a501367f476ad!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1647471234567!5m2!1sen!2s" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section class="location-details" id="uptown">
+                <div class="location-content">
+                    <div class="location-info">
+                        <div class="location-header">
+                            <h2><i class="fas fa-tree"></i> Uptown Muse Cafe</h2>
+                        </div>
+                        
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <i class="fas fa-map-pin"></i>
+                                <div>
+                                    <h4>Address</h4>
+                                    <p>456 Park Avenue, Uptown District<br>San Francisco, CA 94117</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h4>Opening Hours</h4>
+                                    <p><strong>Monday - Friday:</strong> 6:30 AM - 9:30 PM</p>
+                                    <p><strong>Saturday - Sunday:</strong> 7:30 AM - 10:30 PM</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Contact</h4>
+                                    <p><strong>Phone:</strong> +1 (415) 555-5678</p>
+                                    <p><strong>Email:</strong> uptown@musecafe.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-star"></i>
+                                <div>
+                                    <h4>Special Features</h4>
+                                    <ul class="features-list">
+                                        <li>Large garden seating area</li>
+                                        <li>Book exchange library</li>
+                                        <li>Weekly poetry nights</li>
+                                        <li>Free Wi-Fi with workstations</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="action-buttons">
+                            <a href="https://goo.gl/maps/example2" target="_blank" class="action-btn">
+                                <i class="fas fa-directions"></i> Get Directions
+                            </a>
+                            <a href="tel:+14155555678" class="action-btn call">
+                                <i class="fas fa-phone"></i> Call Now
+                            </a>
+                            <button class="action-btn save" onclick="saveLocation('uptown')">
+                                <i class="far fa-bookmark"></i> Save Location
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="location-map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.682434336373!2d-122.43941508468216!3d37.78492977975938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c8b1e6c7f%3A0x4a501367f476ad!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1647471234567!5m2!1sen!2s" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+
+            
+        </div>
+
+        
+        <section class="all-locations">
+            <h2><i class="fas fa-map"></i> All Locations at a Glance</h2>
+            <div class="locations-grid">
+                <div class="location-card">
+                    <div class="card-header">
+                        <i class="fas fa-building"></i>
+                        <h3>Downtown</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Coffee Street</p>
+                        <p><i class="fas fa-clock"></i> 7am-10pm Weekdays</p>
+                        <p><i class="fas fa-wifi"></i> Free Wi-Fi</p>
+                        <p><i class="fas fa-music"></i> Live Music</p>
+                    </div>
+                    <button class="card-btn" data-city="downtown">View Details</button>
+                </div>
+
+                <div class="location-card">
+                    <div class="card-header">
+                        <i class="fas fa-tree"></i>
+                        <h3>Uptown</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><i class="fas fa-map-marker-alt"></i> 456 Park Avenue</p>
+                        <p><i class="fas fa-clock"></i> 6:30am-9:30pm Weekdays</p>
+                        <p><i class="fas fa-book"></i> Book Library</p>
+                        <p><i class="fas fa-seedling"></i> Garden Seating</p>
+                    </div>
+                    <button class="card-btn" data-city="uptown">View Details</button>
+                </div>
+
+                <div class="location-card">
+                    <div class="card-header">
+                        <i class="fas fa-water"></i>
+                        <h3>Waterfront</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><i class="fas fa-map-marker-alt"></i> 789 Bay View Drive</p>
+                        <p><i class="fas fa-clock"></i> 8am-11pm Daily</p>
+                        <p><i class="fas fa-umbrella-beach"></i> Ocean View</p>
+                        <p><i class="fas fa-ice-cream"></i> Ice Cream Bar</p>
+                    </div>
+                    <button class="card-btn" data-city="waterfront">View Details</button>
+                </div>
+
+                <div class="location-card">
+                    <div class="card-header">
+                        <i class="fas fa-university"></i>
+                        <h3>University</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><i class="fas fa-map-marker-alt"></i> 101 Campus Road</p>
+                        <p><i class="fas fa-clock"></i> 24/7 During Exams</p>
+                        <p><i class="fas fa-laptop"></i> Study Area</p>
+                        <p><i class="fas fa-graduation-cap"></i> Student Discount</p>
+                    </div>
+                    <button class="card-btn" data-city="university">View Details</button>
+                </div>
+            </div>
+        </section>
+
+       
+        <section class="visit-info">
+            <div class="info-section parking">
+                <i class="fas fa-parking"></i>
+                <h3>Parking Information</h3>
+                <p>Free parking available at all locations. Downtown location offers validated parking at the garage next door.</p>
+            </div>
+            
+            <div class="info-section accessibility">
+                <i class="fas fa-wheelchair"></i>
+                <h3>Accessibility</h3>
+                <p>All locations are wheelchair accessible with ramps and accessible restrooms.</p>
+            </div>
+            
+            <div class="info-section pets">
+                <i class="fas fa-paw"></i>
+                <h3>Pet Friendly</h3>
+                <p>Our outdoor seating areas are pet-friendly. Water bowls available upon request.</p>
+            </div>
+            
+            <div class="info-section wifi">
+                <i class="fas fa-wifi"></i>
+                <h3>Free Wi-Fi</h3>
+                <p>Complimentary high-speed Wi-Fi available at all locations. Network: MuseCafe-Guest</p>
+            </div>
+        </section>
+
+        
+        <section class="find-nearest">
+            <div class="finder-content">
+                <h2><i class="fas fa-location-crosshairs"></i> Find Your Nearest Muse Cafe</h2>
+                <p>Enter your address or zip code to find the closest location</p>
+                <div class="location-finder">
+                    <input type="text" id="locationInput" placeholder="Enter your address or zip code">
+                    <button class="find-btn" onclick="findNearestLocation()">
+                        <i class="fas fa-search-location"></i> Find
+                    </button>
+                </div>
+                <div id="locationResults" class="location-results"></div>
+            </div>
+        </section>
+    </main>
+
+   
+    <footer>
+        <p>&copy; 2024 Muse Cafe. All rights reserved.</p>
+        <p class="social-links">
+            Follow us on
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>,
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>,
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        </p>
+    </footer>
+
+    <script src="js/locations.js"></script>
 </body>
-
-
-
 
 </html>
